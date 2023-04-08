@@ -49,6 +49,10 @@ def main():
 
     print(f"You lose. The secret number was {secret_number}")
     playsound.playsound(os.path.abspath("./sounds/gameover.mp3"))
+    play_again = input("Want to play again? (y/n) ")
+    if play_again == "y":
+        print()
+        main()
 
 
 
